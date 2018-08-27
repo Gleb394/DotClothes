@@ -11,7 +11,10 @@ public class Connection {
     private static SessionFactory sessionFactory;
 
     private static SessionFactory configurationSessionFactory() {
-        return new Configuration().configure().buildSessionFactory();
+        if(sessionFactory == null) {
+            return new Configuration().configure().buildSessionFactory();
+        }
+        return null;
     }
 
     public static Session getSession() {

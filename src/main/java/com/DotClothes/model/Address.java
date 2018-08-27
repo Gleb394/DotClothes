@@ -1,15 +1,11 @@
 package com.DotClothes.model;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 
-@EqualsAndHashCode(callSuper = true)
 @Entity
-@Getter
-@Setter
+@Data
 @Table(name = "Address")
 public class Address extends Model {
 
