@@ -1,4 +1,4 @@
-package com.DotClothes.model;
+package com.dotClothes.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -7,24 +7,20 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-/**
- * Created by Gleb on 10.07.18.
- */
-
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-@Table(name = "Sex")
-public class Sex extends Model {
+@Table(name = "Size")
+public class Size extends Model {
 
-    @Column(name = "name_sex")
-    String nameSex;
+    @Column(name = "name_size")
+    private int nameSize;
 
-    public Sex() {
+    public Size() {
         super();
     }
 
-    public Sex(Long id) {
+    public Size(Long id) {
         super(id);
     }
 }

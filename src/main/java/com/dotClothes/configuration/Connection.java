@@ -1,4 +1,4 @@
-package com.DotClothes.connection;
+package com.dotClothes.configuration;
 
 
 import org.hibernate.Session;

@@ -1,7 +1,7 @@
-package com.DotClothes.imp;
+package com.dotClothes.imp;
 
-import com.DotClothes.dao.CustomerDao;
-import com.DotClothes.model.Customer;
+import com.dotClothes.dao.CustomerDao;
+import com.dotClothes.model.Customer;
 
 /**
  * Created by Gleb on 01.06.18.

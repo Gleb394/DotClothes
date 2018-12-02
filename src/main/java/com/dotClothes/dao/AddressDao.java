@@ -1,6 +1,6 @@
-package com.DotClothes.dao;
+package com.dotClothes.dao;
 
-import com.DotClothes.model.Address;
+import com.dotClothes.model.Address;
 
 /**
  * Created by Gleb on 05.06.18.

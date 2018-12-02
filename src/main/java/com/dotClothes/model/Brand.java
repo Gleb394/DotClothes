@@ -1,4 +1,4 @@
-package com.DotClothes.model;
+package com.dotClothes.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -10,17 +10,17 @@ import javax.persistence.Table;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-@Table(name = "Size")
-public class Size extends Model {
+@Table(name = "Brand")
+public class Brand extends Model {
 
-    @Column(name = "name_size")
-    private int nameSize;
+    @Column(name = "name_brand")
+    private String nameBrand;
 
-    public Size() {
+    public Brand() {
         super();
     }
 
-    public Size(Long id) {
+    public Brand(Long id) {
         super(id);
     }
 }

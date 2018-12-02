@@ -1,6 +1,6 @@
-package com.DotClothes.dao;
+package com.dotClothes.dao;
 
-import com.DotClothes.model.Model;
+import com.dotClothes.model.Model;
 
 import java.util.List;
 

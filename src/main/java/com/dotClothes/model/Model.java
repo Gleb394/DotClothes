@@ -1,4 +1,4 @@
-package com.DotClothes.model;
+package com.dotClothes.model;
 
 import lombok.Data;
 

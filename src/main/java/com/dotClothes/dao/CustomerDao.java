@@ -1,6 +1,6 @@
-package com.DotClothes.dao;
+package com.dotClothes.dao;
 
-import com.DotClothes.model.Customer;
+import com.dotClothes.model.Customer;
 
 /**
  * Created by Gleb on 01.06.18.

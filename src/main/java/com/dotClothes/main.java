@@ -1,10 +1,9 @@
-package com.DotClothes;
+package com.dotClothes;
 
-import com.DotClothes.imp.ImpCustomerDao;
-import com.DotClothes.model.Customer;
+import com.dotClothes.imp.ImpCustomerDao;
+import com.dotClothes.model.Customer;
 
 import java.util.GregorianCalendar;
-import java.util.Locale;
 
 /**
  * Created by Gleb on 12.07.18.
@@ -13,7 +12,7 @@ public class main {
 
     public static void main(String[] args) {
 
-        Customer customer = new Customer("gleb", "tar", "(097)999-69-36", "sdff", "man", "password", "ddd", new GregorianCalendar(Locale.getDefault()));
+        Customer customer = new Customer("gleb", "tar", "(097)999-69-36", "sdff", "man", "password", "ddd", new GregorianCalendar());
 
         //Address address = new Address("fff", "fff", "vvv");
 
