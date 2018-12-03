@@ -2,9 +2,8 @@ package com.dotClothes.imp;
 
 import com.dotClothes.dao.AddressDao;
 import com.dotClothes.model.Address;
+import org.springframework.stereotype.Repository;
 
-/**
- * Created by Gleb on 05.06.18.
- */
+@Repository
 public class ImpAddressDao extends AbstractDao<Address> implements AddressDao {
 }

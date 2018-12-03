@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
-import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -31,8 +30,8 @@ public class Customer extends Model {
     private String password;
     @Column(name = "nick")
     private String nick;
-    @Column(name = "created")
-    private GregorianCalendar created;
+    @Column(name = "token")
+    private String token;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer", cascade = CascadeType.ALL)
     private Set<Order> order = new HashSet<Order>();
 
@@ -44,7 +43,7 @@ public class Customer extends Model {
         super(id);
     }
 
-    public Customer(String firstName, String lastName, String phone, String eMail, String sex, String password, String nick, GregorianCalendar created) {
+    public Customer(String firstName, String lastName, String phone, String eMail, String sex, String password, String nick, String token) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -52,6 +51,6 @@ public class Customer extends Model {
         this.sex = sex;
         this.password = password;
         this.nick = nick;
-        this.created = created;
+        this.token = token;
     }
 }
